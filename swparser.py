@@ -3,6 +3,7 @@
 import sys
 import os
 
+#this is the main function, it greets the user and 
 def main():
     print("This program parses the sweep rules file from Outlook.com")
     print("Would you like to parse your file?")
@@ -14,7 +15,8 @@ def main():
         exit()
     else:
         reader()
-
+        
+#This function reads the file and adds a space after each closing bracket
 def reader():
     f = open('Sweeprules.txt' , 'r').read()
     f_list = list(f)
